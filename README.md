@@ -51,7 +51,7 @@ This tool is ideal for:
 - (Optional) HuggingFace Token
 
 ## *📦 Installation*
-- git clone https://github.com/your-username/document-qa-assistant.git-
+- git clone [https://github.com/your-username/document-qa-assistant.git-](https://github.com/amberkhan707/Langchain-RAGApplication/)
 - cd document-qa-assistant
 
 

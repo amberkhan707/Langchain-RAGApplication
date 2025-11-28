@@ -1,4 +1,3 @@
-```
 ### 📄 Document Q&A Assistant 🤖
 
 A powerful AI-powered Document Question-Answering System built using Streamlit & LangChain
@@ -212,4 +211,3 @@ This project is licensed under the MIT License.
 ⭐ Support
 
 If you find this project useful, please give it a ⭐ on GitHub — it helps a lot!
-```

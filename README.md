@@ -1,109 +1,96 @@
-### 📄 Document Q&A Assistant 🤖
+<img width="1873" height="780" alt="image" src="https://github.com/user-attachments/assets/851658af-148a-4168-9a4b-309bc874eac8" />
+
+<img width="1863" height="802" alt="image" src="https://github.com/user-attachments/assets/6d00f4ec-3c87-47ba-91bd-9bfa93c5a5cd" />
+
+# 📄 Document Q&A Assistant 🤖
 
 A powerful AI-powered Document Question-Answering System built using Streamlit & LangChain
 
 
-🔍 Overview
+### *🔍 Overview*
 
 Document Q&A Assistant is an AI-powered application that allows users to upload multiple PDF documents and interact with them using natural language questions. It leverages Retrieval-Augmented Generation (RAG) with high-performance LLMs from Groq, FAISS vector search, and HuggingFace embeddings to deliver precise, document-grounded answers.
 
 This tool is ideal for:
 
-Researchers
+- Researchers
 
-Students
+- Students
 
-Analysts
+- Analysts
 
-Legal & Financial professionals
+- Legal & Financial professionals
 
-Anyone working with large PDFs
+- Anyone working with large PDFs
 
-✨ Features
+## *✨ Features*
 
-📄 Multi-Document Support – Upload and query multiple PDFs at once
+1. 📄 Multi-Document Support – Upload and query multiple PDFs at once
 
-💬 Conversational AI – Chat naturally with your documents
+2. 💬 Conversational AI – Chat naturally with your documents
 
-🔍 Semantic Search – FAISS-powered similarity search
+3. 🔍 Semantic Search – FAISS-powered similarity search
 
-🎯 Context-Aware Answers – Responses strictly based on document content
+4. 🎯 Context-Aware Answers – Responses strictly based on document content
 
-💾 Chat Memory – Conversation history persists during sessions
+5. 💾 Chat Memory – Conversation history persists during sessions
 
-🎨 Modern Dark UI – Clean & productivity-focused interface
+6. 🎨 Modern Dark UI – Clean & productivity-focused interface
 
-⚡ Fast Processing – Optimized chunking and vector indexing
+7. ⚡ Fast Processing – Optimized chunking and vector indexing
 
-🔐 Secure API Handling – Environment-based key management
+8. 🔐 Secure API Handling – Environment-based key management
 
-🖥️ Tech Stack
-Component	Technology
-Frontend	Streamlit
-Backend	Python
-LLM	Groq (Qwen 32B)
-Embeddings	all-MiniLM-L6-v2 (HuggingFace)
-Vector Database	FAISS
-PDF Loader	PyPDFLoader
-Chunking	RecursiveCharacterTextSplitter
-AI Framework	LangChain
-⚙️ System Architecture
-PDF Upload → Text Extraction → Chunking → Embeddings → FAISS Index  
-User Query → Semantic Search → Relevant Chunks → LLM → Final Answer
 
-🚀 Quick Start
+## *🚀 Quick Start*
 ✅ Prerequisites
 
-Python 3.8+
+- Python 3.8+
 
-Groq API Key (Get it from Groq Cloud)
+- Groq API Key (Get it from Groq Cloud)
 
-(Optional) HuggingFace Token
+- (Optional) HuggingFace Token
 
-📦 Installation
-git clone https://github.com/your-username/document-qa-assistant.git
-cd document-qa-assistant
+## *📦 Installation*
+- git clone https://github.com/your-username/document-qa-assistant.git-
+- cd document-qa-assistant
 
 
-Create a virtual environment:
-
+## Create a virtual environment:
+```
 python -m venv venv
 source venv/bin/activate        # Mac/Linux
 venv\Scripts\activate           # Windows
+```
 
-
-Install dependencies:
-
+## Install dependencies:
+```
 pip install -r requirements.txt
+```
 
-🔐 Environment Setup
+## *🔐 Environment Setup*
 
-Create .env file:
+- Create .env file:
 
-cp .env.example .env
+- cp .env.example .env
 
 
-Edit .env:
-
+- Edit .env:
+```
 groq_api_key=your_groq_api_key_here
 HFToken=your_huggingface_token_here  # Optional
+```
+## ▶️ Run the Application
+``` streamlit run app.py ```
 
-▶️ Run the Application
-streamlit run app.py
 
+### App will launch at:
 
-App will launch at:
+``` http://localhost:8501 ```
 
-http://localhost:8501
+### 📋 How To Use
 
-📋 How To Use
-1️⃣ Configure API Key
-
-Enter your Groq API Key in the sidebar
-
-The AI model initializes automatically
-
-2️⃣ Upload Documents
+## 1. Upload Documents
 
 Click "Upload PDF(s)"
 
@@ -111,27 +98,19 @@ Select one or multiple PDF documents
 
 Files are processed and indexed automatically
 
-3️⃣ Ask Questions
+## 2. Ask Questions
 
 Use chat box to ask questions
 
 Answers are generated only from document content
 
-4️⃣ Manage Conversations
+## 3. Manage Conversations
 
 Use Clear Chat & Cache to reset
 
 Upload new PDFs anytime
 
-🛠️ Configuration
-🔧 Model Settings
-Parameter	Value
-LLM	qwen/qwen3-32b
-Embeddings	all-MiniLM-L6-v2
-Chunk Size	1000 Tokens
-Chunk Overlap	50 Tokens
-Vector Store	FAISS
-📁 Project Structure
+## *📁 Project Structure*
 document-qa-assistant/
 ├── app.py                 # Main application logic
 ├── requirements.txt       # Python dependencies
@@ -139,75 +118,10 @@ document-qa-assistant/
 ├── README.md              # Project documentation
 └── assets/                # Screenshots & demo files
 
-🚀 Deployment
+## 🚀 Deployment
 🔹 Local Deployment
 streamlit run app.py
 
-🔹 Cloud Deployment (Optional)
-
-You can deploy on:
-
-Streamlit Cloud
-
-AWS EC2
-
-Render
-
-HuggingFace Spaces
-
-Railway
-
-🔒 Security Best Practices
-
-Never expose your API keys in source code
-
-Always use .env files
-
-Add .env to .gitignore
-
-📈 Performance Tips
-
-Use fewer, high-quality PDFs for faster response
-
-Keep chunk size optimized (1000 works best)
-
-Clear cache when switching documents
-
-🧠 Use Cases
-
-Legal Document Analysis
-
-Academic Research
-
-Financial Reports Q&A
-
-Business Contracts
-
-Technical Manuals
-
-Internal Knowledge Bases
-
-🛠️ Future Enhancements
-
-✅ OCR support for scanned PDFs
-
-✅ Multi-model selection
-
-✅ User authentication
-
-✅ Cloud-based persistent memory
-
-✅ Source-citation highlighting
-
-🤝 Contributing
-
-Contributions are welcome!
-Feel free to submit pull requests or open issues for improvements.
-
-📜 License
-
-This project is licensed under the MIT License.
-
-⭐ Support
+# ⭐ Support
 
 If you find this project useful, please give it a ⭐ on GitHub — it helps a lot!
